@@ -1,4 +1,4 @@
-;www.danielyewright.com.                     IN      A
-www.danielyewright.com.              3592    IN      CNAME   webuidevel.github.io.
-webuidevel.github.io.           43192   IN      CNAME   github.map.fastly.net.
-github.map.fastly.net.                 22      IN      A       199.27.76.133
+$ dig danielyewright.com +nostats +nocomments +nocmd
+;danielyewright.com
+danielyewright.com    73    IN    A    192.30.252.153
+danielyewright.com    73    IN    A    192.30.252.154
