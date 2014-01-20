@@ -1,0 +1,321 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+/* Base Styles */
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	color: #333333;
+	background-color: #ffffff;
+
+	-webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container:before,
+.container:after {
+	display: table;
+	content: " ";
+}
+
+.container:after {
+	clear: both;
+}
+
+/* Headings & Titles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+}
+
+h2 {
+	font-weight: 700;
+	padding-top: 15px;
+	text-transform: uppercase;
+}
+
+/* Typography */
+p {
+	font-family: 'PT Sans', sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Links */
+a {
+	font-weight: 700;
+    color: #12b1d9;
+    text-decoration: none;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -ms-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -o-transition: color 0.2s ease-in, background 0.2s ease-in;
+    transition: color 0.2s ease-in, background 0.2s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #12b1d9;
+    outline: 0;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -ms-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -o-transition: color 0.2s ease-in, background 0.2s ease-in;
+    transition: color 0.2s ease-in, background 0.2s ease-in;
+}
+
+/* Button Mods. */
+.button {
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 10px 24px 8px;
+	white-space: nowrap;
+	overflow: hidden;
+	border-radius: 4px;
+	text-overflow: ellipsis;
+}
+
+/* Form Mods. */
+form small {
+	color: #ff0000;
+}
+
+/* Image Styles */
+.img-responsive {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+.img-rounded {
+	border-radius: 6px;
+}
+
+.img-thumbnail {
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+	padding: 4px;
+	line-height: 1.428571429;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+	-webkit-transition: all 0.2s ease-in-out;
+        	transition: all 0.2s ease-in-out;
+}
+
+.img-circle {
+	border-radius: 50%;
+}
+
+.clearing-thumbs a:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.clearing-thumbs img {
+	max-width: 300px;
+	height: 200px;
+}
+
+/* Text Styles */
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* Header */
+header img {
+	margin: 0 auto;
+	display: table;
+}
+
+header .img-circle {
+	padding-top: 10px;
+}
+
+.lf {
+	float: left;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* Navigation */
+nav {
+	padding-top: 20px;
+	padding-right: 25px;
+	float: right;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline;
+	padding-right: 20px;
+}
+
+nav ul li > a {
+	font-size: 18px;
+	color: #333333;
+}
+
+nav ul li > a:hover {
+	color: #12b1d9;
+	border-bottom: 3px solid rgba(18, 177, 217, 0.5);
+	padding-bottom: 5px;
+	text-decoration: none;
+	opacity: 1;
+	filter: alpha(opacity=100);
+
+	-webkit-transition: padding-bottom 0.2s ease-in, background 0.2s ease-in;
+    -moz-transition: padding-bottom 0.2s ease-in, background 0.2s ease-in;
+    -ms-transition: padding-bottom 0.2s ease-in, background 0.2s ease-in;
+    -o-transition: padding-bottom 0.2s ease-in, background 0.2s ease-in;
+    transition: padding-bottom 0.2s ease-in, background 0.2s ease-in;
+}
+
+nav ul li.active > a {
+	color: #12b1d9;
+	border-bottom: 3px solid rgba(18, 177, 217, 0.5);
+	padding-bottom: 5px;
+	text-decoration: none;
+}
+
+/* Portfolio */
+#folio {
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+/* Pricing */
+#pw {
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+#pw h4 {
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #12b1d9;
+	padding: 5px 5px;
+}
+
+#pw .price {
+	font-size: 34px;
+	font-weight: 700;
+	color: #12b1d9;
+}
+
+#pw .accent {
+	font-size: 18px;
+	font-weight: 700;
+	color: #12b1d9;
+}
+
+#pw i {
+	color: #aaaaaa;
+}
+
+/* Contact */
+#cw {
+	padding-top: 80px;
+	padding-bottom: 50px;
+	color: #12b1d9;
+}
+
+#cw p {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+/* Social Icon Styles */
+.social i {
+	padding-right: 20px;
+	color: #12b1d9;
+}
+
+.social i:hover {
+	color: #12b1d9;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+
+	-webkit-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -ms-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -o-transition: color 0.2s ease-in, background 0.2s ease-in;
+    transition: color 0.2s ease-in, background 0.2s ease-in;
+}
+
+/* Filter */
+.controls {
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 30px;
+	vertical-align: top;
+	border-bottom: 1px solid #cccccc;
+}
+
+.controls li {
+	font-weight: 700;
+	margin-left: 20px;
+	cursor: pointer;
+	list-style-type: none;
+	display: inline;
+	color: #333333;
+}
+
+.controls li:hover {
+	color: #12b1d9;
+
+	-webkit-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -ms-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -o-transition: color 0.2s ease-in, background 0.2s ease-in;
+    transition: color 0.2s ease-in, background 0.2s ease-in;
+}
+
+.controls li.active {
+	color: #12b1d9;
+}
+
+#filters .mix {
+	display: none;
+	opacity: 0;
+}
